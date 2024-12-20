@@ -385,7 +385,9 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Pour Chrome/Safari */
+  -moz-appearance: button;    /* Pour Firefox */
+  appearance: button;         /* Propriété standard */
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,9 +444,11 @@ legend + * {
 }
 
 [type=search] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+  -moz-appearance: textfield; /* Pour Firefox */
+  appearance: textfield; /* Propriété standard */
 }
+
 
 /* rtl:raw:
 [type="tel"],
@@ -464,7 +468,9 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Chrome, Safari */
+  -moz-appearance: button;    /* Firefox */
+  appearance: button;         /* Propriété standard */
 }
 
 output {
