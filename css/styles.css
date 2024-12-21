@@ -117,6 +117,7 @@
 .download-icon i {
     font-size: 24px;
 }
+
 html {
   overflow: auto;
   scrollbar-width: none; /* Pour Firefox */
