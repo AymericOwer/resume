@@ -91,6 +91,41 @@
   }
 }
 
+  /* Position de l'icône */
+  .download-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(var(--bs-primary-rgb)); /* Couleur de fond */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-icon:hover {
+    background-color: rgba(168, 168, 168, 0.322);
+    color: rgb(var(--bs-primary-rgb));
+}
+
+.download-icon i {
+    font-size: 24px;
+}
+html {
+  overflow: auto;
+  scrollbar-width: none; /* Pour Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Edge */
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
